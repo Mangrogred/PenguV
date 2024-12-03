@@ -10,14 +10,16 @@ PenguV is new LiveISO minimal distro that based on busybox and alpine package ma
 * qemu.sh for starting qcow2
 
 ### Guide
-1. Change initramfs if you want
-2. ```./makefs.sh```  for creating cpio.gz files
-3. ```./makeiso.sh```  for creating iso and qcow2 bootable files
-4. ```./qemu.sh```  for running PenguV in qemu
+1. Extract initramfs 
+2. Edit initramfs if you want
+3. ```./makefs.sh```  for creating cpio.gz files
+4. ```./makeiso.sh```  for creating iso and qcow2 bootable files
+5. ```./qemu.sh```  for running PenguV in qemu
 
 ### Dependencies
 * Debian/Ubuntu: ```sudo apt install build-essential git flex bison bc cpio libncurses5-dev libssl-dev libelf-dev xorriso mtools qemu-system```
 * Arch: ```sudo pacman -Syu base-devel git flex bison bc cpio xorriso mtools qemu-desktop```
 
 ___
-#### Warning: uefi is not fully supported
+#### Warning: you need to extract initramfs.tar.gz into this folder as initramfs
+#### Warning: UEFI is not fully supported
